@@ -1,15 +1,22 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 
-Vue.use(Router)
+import Vue from "vue";
+import VueRouter from "vue-router";
+import routes from "../routes/index";
+Vue.use(VueRouter);
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
+/*
+  在没有子路由 且命名规范的情况下:
+    linkActiveClass linkExactActiveClass 用谁都可以
+
+  在有子路由的情况下使用
+    linkActiveClass
+*/
+export default new VueRouter({
+  routes,
+  mode:'history',
+  linkActiveClass:'active'
 })
+
+
+
+
