@@ -10,6 +10,7 @@
           <div class="list-group">
               <router-link to="/About" class="list-group-item">About</router-link>
               <router-link to="/Home" class="list-group-item">Home</router-link>
+              <router-link to="/User" class="list-group-item">User</router-link>
           </div>
       </div>
       <div class="col-xs-6">
