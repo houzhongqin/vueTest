@@ -1,12 +1,19 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
-  </div>
+    <div class="container">
+      <v-search></v-search>
+      <v-list></v-list>
+    </div>
 </template>
 
 <script>
+import search from '@/components/search.vue'
+import list from '@/components/list.vue'
 export default {
-  name: 'App'
+  name: 'user',
+  components:{
+    "v-list":list,
+    "v-search":search
+  }
 }
 </script>
 
